@@ -42,15 +42,181 @@ const getLayoutedElements = (nodes, edges, direction = "TB") => {
 function App() {
   const inputData = {
     structureMaster: {
-      masterAccount: "ABC",
+      masterAccount: "Reliance Retail",
     },
     structureChildDetails: [
-      { linkedAccountDetails: { parentAccount: "ABC", childAccount: "DEF" } },
-      { linkedAccountDetails: { parentAccount: "ABC", childAccount: "GHI" } },
-      { linkedAccountDetails: { parentAccount: "DEF", childAccount: "DEF1" } },
-      { linkedAccountDetails: { parentAccount: "DEF", childAccount: "DEF2" } },
-      { linkedAccountDetails: { parentAccount: "GHI", childAccount: "GHI1" } },
-      { linkedAccountDetails: { parentAccount: "GHI", childAccount: "GHI2" } },
+      // North Region
+      {
+        linkedAccountDetails: {
+          parentAccount: "Reliance Retail",
+          childAccount: "North",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "North",
+          childAccount: "Punjab",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "North",
+          childAccount: "Haryana",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Punjab",
+          childAccount: "Ludhiana",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Punjab",
+          childAccount: "Amritsar",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Haryana",
+          childAccount: "Gurgaon",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Haryana",
+          childAccount: "Faridabad",
+        },
+      },
+
+      // South Region
+      {
+        linkedAccountDetails: {
+          parentAccount: "Reliance Retail",
+          childAccount: "South",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "South",
+          childAccount: "Tamil Nadu",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "South",
+          childAccount: "Karnataka",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Tamil Nadu",
+          childAccount: "Chennai",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Tamil Nadu",
+          childAccount: "Coimbatore",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Karnataka",
+          childAccount: "Bangalore",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Karnataka",
+          childAccount: "Mysore",
+        },
+      },
+
+      // East Region
+      {
+        linkedAccountDetails: {
+          parentAccount: "Reliance Retail",
+          childAccount: "East",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "East",
+          childAccount: "West Bengal",
+        },
+      },
+      {
+        linkedAccountDetails: { parentAccount: "East", childAccount: "Odisha" },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "West Bengal",
+          childAccount: "Kolkata",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "West Bengal",
+          childAccount: "Siliguri",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Odisha",
+          childAccount: "Bhubaneswar",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Odisha",
+          childAccount: "Cuttack",
+        },
+      },
+
+      // West Region
+      {
+        linkedAccountDetails: {
+          parentAccount: "Reliance Retail",
+          childAccount: "West",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "West",
+          childAccount: "Maharashtra",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "West",
+          childAccount: "Gujarat",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Maharashtra",
+          childAccount: "Mumbai",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Maharashtra",
+          childAccount: "Pune",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Gujarat",
+          childAccount: "Ahmedabad",
+        },
+      },
+      {
+        linkedAccountDetails: {
+          parentAccount: "Gujarat",
+          childAccount: "Surat",
+        },
+      },
     ],
   };
 
